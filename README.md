@@ -2,7 +2,7 @@
 This application was created on June 2019.
 
 
-# Author
+# Authors
 * MARK OPONDO
 * IAN BRIAN KIBET KIRUI TREVOR II
 * AISHA SHARIF
