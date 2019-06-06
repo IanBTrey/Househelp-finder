@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+{% block content %}
+<body>
+        <div class="container color">
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="jumbotron">
+                        <h2 class="head">Top Houselps From Different neighbourhoods</h2>
+                </div>
+                <br>
+                <div class="row col-sm-9 col-xs-9 col-md-8 col-lg-8">
+                    <br>
+                    <div class="thumbnail blogs">
+                        <h3><b>5-STAR HOUSEHELPS</b></h3>
+                        <img src="static/photos/mboch1.jpg" alt="">
+                        <br>
+                        <p>Has an educational background</p>
+                        <p>Has work experience of over seven years</p>
+                        <p>Absolutely cleared of any criminal activities </p>
+                        <p>Relevant and legitimate referees from previous jobs </p>
+                        <p>Sufficient training in first Aid,child nursing and housekeeping</p>
+                        <p>Fluent in English,Kiswahili,French and German</p>
+                        <p>Starting salary of Ksh 20,000.</p>
+                        <br>
+                    </div>
+                    <div class="thumbnail blogs">
+                        <h3><b>4-Star HOUSEHELPS</b></h3>
+                        <img src="static/photos/mboch2.jpg" alt="">
+                        <br>
+                        <p>Has an educational background</p>
+                        <p>Has work experience of over five years</p>
+                        <p>Absolutely cleared of any criminal activities </p>
+                        <p>Relevant and legitimate referees from previous jobs </p>
+                        <p>Sufficient training in first Aid,child nursing and housekeeping</p>
+                        <p>Fluent in English,Kiswahili and French</p>
+                        <p>Starting salary of Ksh 16,500.</p>
+                        <br>
+                    </div>
+                    <div class="thumbnail blogs">
+                        <h3><b>3-STAR HOUSEHELPS</b></h3>
+                        <img src="static/photos/mboch3.jpg" alt="">
+                        <br>
+                        <p>Has work experience of over three years</p>
+                        <p>Absolutely cleared of any criminal activities </p>
+                        <p>Relevant and legitimate referees from previous jobs </p>
+                        <p>Sufficient training in first Aid,child nursing and housekeeping</p>
+                        <p>Fluent in English and Kiswahili</p>
+                        <p>Starting salary of Ksh 12,000.</p>
+                        <br>
+                    </div>
+                    <div class="thumbnail blogs">
+                        <h3><b>2-STAR HOUSEHELPS</b></h3>
+                        <img src="static/photos/mboch4.jpg" alt="">
+                        <br>
+                        <p>Has work experience of over two years</p>
+                        <p>Absolutely cleared of any criminal activities </p>
+                        <p>Relevant and legitimate referees from previous jobs </p>
+                        <p>Sufficient training in first Aid,child nursing and housekeeping</p>
+                        <p>Fluent in English and Kiswahili</p>
+                        <p>Starting salary of Ksh 10,500.</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="row col-sm-1 col-xs-1 col-md-1 col-lg-1" ></div>
+                <div class="row col-sm-2 col-xs-2 col-md-3 col-lg-3" style="border-left: 3px black">
+                    <!-- <div class="button btn btn-success">
+                        <a href="/subscribe" class="subscribe">Subscribe Here:</a>
+                    </div> -->
+                    <br>
+                    <br>
+                    <div class="thumbnail">
+                            <h2 class="view">Posted Searches:</h2>
+                            {{macro.displayBlog(blogs)}}
+                    </div>
+                </div>
+            </div>
+</body>
+<style>
+        @import url('https://fonts.googleapis.com/css?family=Nunito');
+        body{
+            background: url(static/photos/mboch.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .head{
+            color: green;
+            font-family: 'Nunito', sans-serif !important;
+            font-size: 40px;
+            text-align: center;
+            text-decoration-line: underline;
+
+
+        }
+        .subscribe{
+            font-family: 'Nunito', sans-serif !important;
+        }
+
+        .blogs{
+           font-family: 'Nunito', sans-serif !important;
+           width: 620px;
+           color: black !important;
+           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+           transition: all 0.3s ease 0s;
+           cursor: pointer;
+        }
+        .blogs:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        transform: translateY(-7px);
+        }
+        p{
+            font-size: 15px;
+        }
+        h3{
+            color: green;
+            text-decoration-line: underline;
+        }
+        h2{
+            color: green;
+        }
+        .view{
+            text-decoration-line: underline;
+            font-family: 'Nunito', sans-serif !important;
+        }
+        .thumbnail{
+            text-align: center;
+        }
+        .color{
+            color: black !important;
+            font-family: 'Nunito', sans-serif !important;
+
+        }
+   </style>
+{% endblock %}
